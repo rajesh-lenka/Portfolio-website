@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: rgb(50, 7, 54); */
+  background-image: linear-gradient(
+    to right,
+    rgb(49, 13, 97),
+    rgb(28, 54, 172)
+  );
+  color: white;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Playwrite AU QLD", cursive;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 17px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(140, 96, 221);
+    transition: all 0.5s;
+}
+
+.hero {
+  background-image: linear-gradient(
+    to right,
+    rgb(124, 201, 146),
+    rgb(141, 89, 170)
+  );
+  background-color: rgb(160, 193, 193);
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  align-items: center;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-left .one {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  color: rgb(57, 19, 84);
+  font-weight: bolder;
+}
+
+.hero-left .two {
+  font-size: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hero-right img {
+  border-radius: 14px;
+  height: 150px;
+}
+
+.button-container {
+  padding: 9px 0;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right,
+    rgb(116, 82, 217),
+    rgb(47, 11, 80)
+  );
+  color: white;
+  padding: 7px 9px;
+  margin: 0 2px;
+  border: 2px solid purple;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bolder;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-image: none;
+  background-color: rgb(86, 74, 220);
+}
+
+.project {
+  border-top: 1px solid rgb(155, 101, 196);
+  padding: 22px 100px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 97, 186),
+    rgb(141, 224, 156)
+  );
+}
+
+.project-image img {
+  width: 29.5vw;
+  margin: 35px 20px;
+  border-radius: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  padding: 42px;
+}
+
+.project-info .text {
+  padding: 10px 0;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.project-info p {
+  padding: 12px 0;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+footer {
+  background-color: rgb(47, 6, 51);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 980px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero{
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .hero-left{
+    align-items: center;
+  }
+
+  .project{
+    padding: 1px;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+    .hero-left .one{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero-left .two{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .project{
+        flex-direction: column;
+    }
+    
+    .project-image img{
+        width: 80vw;
+        margin: 15px 35px;
+    }
+
+    .project-info{
+        padding: 0 23px;
+    }
+}
